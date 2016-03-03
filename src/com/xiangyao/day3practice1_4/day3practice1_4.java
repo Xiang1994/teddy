@@ -10,14 +10,15 @@ package com.xiangyao.day3practice1_4;
 
 public class day3practice1_4 {
 	public static void main(String[] args) {
-		getFive n = new getFive();
-		getSum k = new getSum();
+		Math m = new Math();
+		m.getFive();
+		m.getSum();
 
 	}
 }
 
-class getFive {
-	public getFive() {
+class Math {
+	public  void getFive() {
 		System.out.println("输出1～1000能被5整除的数，每行三个");
 		for (int i = 1; i <= 1000; i++) {
 			if (i % 5 == 0) {
@@ -25,10 +26,8 @@ class getFive {
 			}
 		}
 	}
-}
 
-class getSum {
-	public getSum() {
+	public  void getSum() {
 		int sum1 = 0;// oddSum奇数
 		for (int i = 1; i <= 100;) {
 			// if(i%2!=0)
