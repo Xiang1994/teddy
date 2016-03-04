@@ -22,7 +22,10 @@ class Math {
 		System.out.println("输出1～1000能被5整除的数，每行三个");
 		for (int i = 1; i <= 1000; i++) {
 			if (i % 5 == 0) {
-				System.out.println(i);
+				System.out.print(i+"\t");
+			}
+			if(i%15 == 0){
+				System.out.println();
 			}
 		}
 	}
