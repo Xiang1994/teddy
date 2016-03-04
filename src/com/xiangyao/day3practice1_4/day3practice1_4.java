@@ -13,7 +13,8 @@ public class day3practice1_4 {
 		Math m = new Math();
 		m.getFive();
 		m.getSum();
-
+		m.getRes();
+        m.getAdd();
 	}
 }
 
@@ -24,7 +25,7 @@ class Math {
 			if (i % 5 == 0) {
 				System.out.print(i+"\t");
 			}
-			if(i%15 == 0){
+			 if(i%5*3 == 0){
 				System.out.println();
 			}
 		}
@@ -47,9 +48,50 @@ class Math {
 		}
 		System.out.println("一百以内偶数和为" + sum2);
 	}
-}
+
 /*
  * goodSample int oddSum = 0; int evenSum = 0; for(int i = 0;i<=100;i++){
  * if(i%2!=0){ oddSum += i;} else{ evenSum += i;}
  * System.out.println("奇数和"+oddSum); System.out.println("偶数和"+evenSum);
  */
+ public void getRes(){
+	 for(int i = 1;i<=9;i++){
+		 for(int j = 1;j<=i;j++){
+			 System.out.print(i+"*"+j+"="+i*j+"\t");
+		 }
+		 System.out.println();
+	 }
+	 System.out.println("*********************");
+ }
+ 
+  
+ public void getAdd(){
+	 int d = 0;
+	 for(int m = 1;m<=9;m++){
+		 for(int n = 1;n<=m;n++){
+			 int c = m + n;
+			  d = d + c;
+			 System.out.print(m+"+"+n+"="+c+"\t");
+			 
+		 }
+     System.out.println();
+	 }
+	 System.out.println(d);
+ }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
